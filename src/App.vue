@@ -3,12 +3,14 @@ import { store } from './store'
 import CountryFlag from '../node_modules/vue-country-flag-next'
 import AppHeader from "./components/AppHeader.vue"
 import AppHero from "./components/AppHero.vue"
+import AppMain from "./components/AppMain.vue"
 
 export default{
   components:{
     CountryFlag,
     AppHeader,
     AppHero,
+    AppMain,
   },
   data(){
     return{

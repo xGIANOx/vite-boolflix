@@ -40,9 +40,9 @@ export default {
                 <a class="nav-link active text-white" aria-current="page" href="#">La mia lista</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <!-- <form class="d-flex" role="search"> -->
               <input type="text" class="form-control text-center search_box bg-black text-white border-0" placeholder="What are you watching today?" v-model='store.searchText'  @keyup.enter="store.fetchMovies(), store.fetchTvShows()">
-            </form>
+            <!-- </form> -->
             <ul class=" mb-2 mb-lg-0 ms-2 d-flex p-0 align-items-center">
               <li class="mx-2">
                 <font-awesome-icon icon="bell" class="text-dark bell_icon d-flex align-self-center text-white"/>
