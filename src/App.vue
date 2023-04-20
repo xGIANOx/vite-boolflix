@@ -2,10 +2,13 @@
 import { store } from './store'
 import CountryFlag from '../node_modules/vue-country-flag-next'
 import AppHeader from "./components/AppHeader.vue"
+import AppHero from "./components/AppHero.vue"
+
 export default{
   components:{
     CountryFlag,
     AppHeader,
+    AppHero,
   },
   data(){
     return{
@@ -19,6 +22,7 @@ export default{
 
 
   <AppHeader></AppHeader>
+  <AppHero></AppHero>
 
 
   <div class="container-fluid">
