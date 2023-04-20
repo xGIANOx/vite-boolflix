@@ -21,10 +21,10 @@ export default {
     <div class="row">
       <h4 class="text-start fs-5 fw-lighter mb-4 mt-4" v-if="store.foundedMovies !=0">Movies</h4>
       <div class="col-2" v-for="movie in store.foundedMovies">
-        <div class="card bg-black">
+        <div class="card bg-black mb-5">
           <img v-if="movie.poster_path" :src="`${store.imageURL}${movie.poster_path}`">
           <img v-else src="../assets/img/Netflix-new-icon.png" alt="">
-          <div class="card-body">
+          <div class="card_body">
             <p>Title: {{ movie.title }}</p>
       <p>Original title: {{ movie.original_title }}</p>
       <div class="d-flex">
@@ -54,7 +54,7 @@ export default {
         <div class="card bg-black">
           <img v-if="tvshow.poster_path" :src="`${store.imageURL}${tvshow.poster_path}`">
           <img v-else src="../assets/img/Netflix-new-icon.png" alt="">
-          <div class="card-body">
+          <div class="card_body">
             <p>Title: {{ tvshow.name }}</p>
       <p>Original title: {{ tvshow.original_name }}</p>
       <div class="d-flex">
@@ -82,5 +82,21 @@ export default {
 <style scoped>
   img{
     height: 413px;
+  }
+  .card{
+    position: relative;
+  }
+  .card_body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+
+  .card:hover > .card_body{
+    display: inline-block;
   }
 </style>
