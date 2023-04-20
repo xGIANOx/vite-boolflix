@@ -25,9 +25,9 @@ export default{
 
   <AppHeader></AppHeader>
   <AppHero></AppHero>
+  <AppMain></AppMain>
 
-
-  <div class="container-fluid">
+  <!-- <div class="container-fluid">
     <div class="row">
       <div class="col ">
         <div class="movies_list">
@@ -56,9 +56,9 @@ export default{
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="tvshows_list">
+  <!-- <div class="tvshows_list">
     <h4 class="bg-warning text-center" v-if="store.foundedTvShows !=0">TV SHOWS</h4>
     <ul>
     <li v-for="tvshow in store.foundedTvShows">
@@ -81,7 +81,7 @@ export default{
       </p>
     </li>
   </ul>
-  </div>
+  </div> -->
 </template>
 
 <style scoped>

@@ -48,7 +48,7 @@ export default {
                 <font-awesome-icon icon="bell" class="text-dark bell_icon d-flex align-self-center text-white"/>
               </li>
               <li class="mx-2 text-white d-flex align-items-center">
-                Giano<img src="../assets/img/boolflix-avatar.png" alt="boolflix avatar" class="avatar ms-2">
+                Giano<img src="../assets/img/boolflix-avatar.png" alt="boolflix avatar" class="avatar ms-3">
               </li>
               
             </ul>
@@ -64,7 +64,7 @@ header{
   z-index: 100;
 }
 .navbar{
-  background: linear-gradient(90deg, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.1) 100%);
 }
 ul{
   list-style: none;
