@@ -6,7 +6,7 @@ export const store = reactive({
   foundedTvShows: [],
   API_URL: 'https://api.themoviedb.org/3/search/movie?api_key=9e8ac7b4623187f4dde6d864b45880ac&page=1',
   API_URL_TV: 'https://api.themoviedb.org/3/search/tv?api_key=9e8ac7b4623187f4dde6d864b45880ac&page=1',
-  imageURL: 'https://image.tmdb.org/t/p/w342',
+  imageURL: 'https://image.tmdb.org/t/p/w200',
   totalStars: 5,
   fetchMovies() {
     let new_url = `${this.API_URL}&query=${this.searchText}`;
@@ -28,6 +28,7 @@ export const store = reactive({
             .then(results => {
                 this.foundedTvShows = results.data.results;
                 console.log(results.data.results);
+
             })
             .catch(err => {
               console.log(err);

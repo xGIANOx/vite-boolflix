@@ -1,9 +1,11 @@
 <script>
 import { store } from './store'
 import CountryFlag from '../node_modules/vue-country-flag-next'
+import AppHeader from "./components/AppHeader.vue"
 export default{
   components:{
-    CountryFlag
+    CountryFlag,
+    AppHeader,
   },
   data(){
     return{
@@ -15,14 +17,14 @@ export default{
 
 <template>
 
-  <div class="serchbox">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="What are you watching today?" v-model='store.searchText'  @keyup.enter="store.fetchMovies(), store.fetchTvShows()">
-      <button class="btn btn-outline-secondary" type="button" @click="store.fetchMovies(), store.fetchTvShows()">Search</button>
-    </div>
-  </div>
 
-  <div class="movies_list">
+  <AppHeader></AppHeader>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col ">
+        <div class="movies_list">
     <h4 class="bg-warning text-center" v-if="store.foundedMovies !=0">MOVIES</h4>
     <ul>
     <li v-for="movie in store.foundedMovies"> 
@@ -45,6 +47,9 @@ export default{
       </p>
     </li>
   </ul>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="tvshows_list">
