@@ -19,10 +19,11 @@ export default {
    
   <div class="container-fluid">
     <div class="row">
-      <h4 class="bg-warning text-center" v-if="store.foundedMovies !=0">MOVIES</h4>
+      <h4 class="text-start fs-5 fw-lighter mb-4 mt-4" v-if="store.foundedMovies !=0">Movies</h4>
       <div class="col-2" v-for="movie in store.foundedMovies">
         <div class="card bg-black">
-          <img  :src="`${store.imageURL}${movie.poster_path}`">
+          <img v-if="movie.poster_path" :src="`${store.imageURL}${movie.poster_path}`">
+          <img v-else src="../assets/img/Netflix-new-icon.png" alt="">
           <div class="card-body">
             <p>Title: {{ movie.title }}</p>
       <p>Original title: {{ movie.original_title }}</p>
@@ -48,13 +49,14 @@ export default {
 
   <div class="container-fluid">
     <div class="row">
-      <h4 class="bg-warning text-center" v-if="store.foundedTvShows !=0">TV SHOWS</h4>
+      <h4 class="text-start fs-5 fw-lighter mb-4" v-if="store.foundedTvShows !=0">TV Shows</h4>
       <div class="col-2" v-for="tvshow in store.foundedTvShows">
         <div class="card bg-black">
-          <img  :src="`${store.imageURL}${tvshow.poster_path}`">
+          <img v-if="tvshow.poster_path" :src="`${store.imageURL}${tvshow.poster_path}`">
+          <img v-else src="../assets/img/Netflix-new-icon.png" alt="">
           <div class="card-body">
-            <p>Title: {{ tvshow.title }}</p>
-      <p>Original title: {{ tvshow.original_title }}</p>
+            <p>Title: {{ tvshow.name }}</p>
+      <p>Original title: {{ tvshow.original_name }}</p>
       <div class="d-flex">
         <p class="me-2">Language:</p>
         <span>
