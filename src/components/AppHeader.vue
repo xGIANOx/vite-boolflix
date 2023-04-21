@@ -62,6 +62,7 @@ export default {
 <style scoped>
 header{
   z-index: 100;
+  position: relative;
 }
 .navbar{
   background: linear-gradient(90deg, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.1) 100%);
