@@ -5,6 +5,8 @@ import AppHeader from "./components/AppHeader.vue"
 import AppHero from "./components/AppHero.vue"
 import AppMain from "./components/AppMain.vue"
 import LoadingScreen from "./components/LoadingScreen.vue"
+import MyList from "./components/MyList.vue"
+
 
 export default{
   components:{
@@ -13,6 +15,7 @@ export default{
     AppHero,
     AppMain,
     LoadingScreen,
+    MyList,
   },
   data(){
     return{
@@ -34,6 +37,7 @@ export default{
   <AppHeader></AppHeader>
   <AppHero></AppHero>
   <AppMain></AppMain>
+  <MyList v-if="!isLoading"></MyList>
 
   
 
