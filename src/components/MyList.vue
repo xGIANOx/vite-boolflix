@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-    <div class="container-fluid movies">
+    <div id="my_list" class="container-fluid movies">
     <div class="row">
       <h4 class="text-start fs-5 fw-lighter mb-4 mt-4 ms-2">La mia lista</h4>
       <div class="col-2">

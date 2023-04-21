@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <div class="container-fluid tv_shows">
+  <div id="tv_shows" class="container-fluid tv_shows">
     <div class="row">
       <h4 class="text-start fs-5 fw-lighter mb-4 ms-2" v-if="store.foundedTvShows !=0">TV Shows</h4>
       <div class="col-2" v-for="tvshow in store.foundedTvShows">

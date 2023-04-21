@@ -25,10 +25,10 @@ export default {
                 <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Film</a>
+                <a class="nav-link active text-white" aria-current="page" href="#movies">Film</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Serie TV</a>
+                <a class="nav-link active text-white" aria-current="page" href="#tv_shows">Serie TV</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active text-white" aria-current="page" href="#">Originali</a>
@@ -37,7 +37,7 @@ export default {
                 <a class="nav-link active text-white" aria-current="page" href="#">Aggiunti di recente</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">La mia lista</a>
+                <a class="nav-link active text-white" aria-current="page" href="#my_list">La mia lista</a>
               </li>
             </ul>
             <!-- <form class="d-flex" role="search"> -->

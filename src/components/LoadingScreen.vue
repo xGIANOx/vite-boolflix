@@ -18,5 +18,6 @@
         top: -35px;
         left: 0;
         background-color: black;
+        overflow-x: hidden;
     }
 </style>
